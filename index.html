@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CORRIGE OS ACENTOS NA PÁGINA -->
+    <meta charset="utf-8">
+    <!-- FAZ O RESPONSIVO FUNCIONAR -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- TITULO DA PAGINA -->
+    <title>FlexBlog</title>
+    <!-- LINK DE FONTES, SEMPRE ANTES DO STYLE -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
+    <!-- APLICA OS ESTILOS CSS NA PAGINA -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <!-- SEGURA INFORMAÇÃO NO TOPO -->
+    <div class="superinfo-bg">
+      <div class="superinfo">
+        <p>Seg / Sex - 08:00 às 18:00</p>
+        <a href="tel:11999999999"> 11 99999-9999 </a>
+        <p>Av. Hell, 666, Fire - Burn</p>
+      </div>
+    </div>
+    <!-- SEGURA MENU EM 100% -->
+    <header class="menu-bg">
+      <!-- SEGURA ITENS DO MENU -->
+      <div class="menu">
+        <!-- ITEM MENU -->
+        <div class="menu-logo">
+          <a href="#"> FlexBlog </a>
+        </div>
+        <!-- ITEM MENU -->
+        <nav class="menu-nav">
+          <ul>
+            <li> <a href="#sobre"> Sobre</a> </li>
+            <li> <a href="#produtos">Produtos</a> </li>
+            <li> <a href="#preço">Preço</a> </li>
+            <li> <a href="#qualidade"> Qualidade</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- TITULO DA PAGINA -->
+    <h1 class="introducao">Novos valores e <br> Propriedades de CSS</h1>
+
+  <!-- CLASS PARA CSS E ID PARA O LINK DO MENU -->
+  <!-- SECTION SOBRE -->
+  <section class="sobre" id="sobre">
+    <!-- div de textos -->
+    <div class="sobre-info">
+      <h1>Sobre</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut massa at elit tristique fermentum at laoreet risus. Nam vitae scelerisque ligula, eget hendrerit nulla. Mauris faucibus risus et quam mollis finibus. Curabitur diam augue, ullamcorper id ligula nec, laoreet laoreet justo. Sed tortor nibh, ultricies varius nisi</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut massa at elit tristique fermentum at laoreet risus. Nam vitae scelerisque ligula, eget hendrerit nulla. Mauris faucibus risus et quam mollis finibus. Curabitur diam augue, ullamcorper id ligula nec, laoreet laoreet justo. Sed tortor nibh, ultricies varius nisi eu, semper porta eros. Proin elit ipsum, ullamcorper a vulputate</p>
+    </div>
+    <!-- div de imagem -->
+    <div class="sobre-img">
+      <img src="img/sobre1.jpg" alt="Sbore 1">
+    </div>
+    <!-- div de imagem -->
+    <div class="sobre-img">
+      <img src="img/sobre2.jpg" alt="Sbore 2">
+    </div>
+  </section>
+
+  <!-- SECTION PRODUTOS -->
+  <section class="produtos" id="produtos">
+    <!-- Titulo section -->
+    <h1>Produtos</h1>
+
+    <!-- Container dos itens de produto -->
+    <div class="produtos-container">
+      <!-- O segundo nome de class serve para colocar um unico atributo que será diferente dos outros, assim evita de ficar copiando codigo para que todos tenham as mesmas caracteriscas e apenas uma diferença -->
+      <div class="produtos-item purple">
+        <h2>Purple</h2>
+        <img src="img/produtos1.jpg" alt="Produtos 1">
+      </div>
+
+      <div class="produtos-item pink">
+        <h2>Pink</h2>
+        <img src="img/produtos2.jpg" alt="Produtos 2">
+      </div>
+
+      <div class="produtos-item blue">
+        <h2>Blue</h2>
+        <img src="img/produtos3.jpg" alt="Produtos 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- section de preços -->
+  <section class="preco" id="preco">
+    <!-- por causa do flexbox nao precisa de um container pra segurar os 3 -->
+    <!-- primeiro item -->
+    <div class="preco-item cobre">
+      <h2>Cobre</h2>
+      <!-- tag sup ja tem um "estilo especifico" que deixa o R$ um pouco acima do valor -->
+      <span> <sup>R$</sup>19 </span>
+      <ul>
+        <li>Planos Ilimitados</li>
+        <li>Acesso Restrito</li>
+        <li>Conteúdo Secreto</li>
+        <li>Suporte 24h</li>
+      </ul>
+      <a href="#">Comprar</a>
+    </div>
+    <!-- segundo item -->
+    <div class="preco-item prata">
+      <h2>Prata</h2>
+      <span> <sup>R$</sup>39 </span>
+      <ul>
+        <li>Planos Ilimitados</li>
+        <li>Acesso Restrito</li>
+        <li>Conteúdo Secreto</li>
+        <li>Suporte 24h</li>
+        <li>Compra Exclusiva</li>
+      </ul>
+      <a href="#">Comprar</a>
+    </div>
+    <!-- terceiro item -->
+    <div class="preco-item ouro">
+      <h2>Ouro</h2>
+      <span> <sup>R$</sup>79 </span>
+      <ul>
+        <li>Planos Ilimitados</li>
+        <li>Acesso Restrito</li>
+        <li>Conteúdo Secreto</li>
+        <li>Suporte 24h</li>
+        <li>Compra Exclusiva</li>
+        <li>Download dos Itens</li>
+      </ul>
+      <a href="#">Comprar</a>
+    </div>
+  </section>
+
+  <!-- section de qualidade -->
+  <section class="qualidade" id="qualidade">
+    <div class="qualidade-item roxo">
+      <h2>Inteligente</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique diam imperdiet vulputate elementum. Curabitur laoreet faucibus dui eget dignissim. Suspendisse egestas mollis risus, in lacinia felis gravida vitae. Vestibulum lacinia pharetra lorem at efficitur. Praesent </p>
+    </div>
+
+    <div class="qualidade-item rosa">
+      <h2>Transparente</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique diam imperdiet vulputate elementum. Curabitur laoreet faucibus dui eget dignissim. Suspendisse egestas mollis risus, in lacinia felis gravida vitae. Vestibulum lacinia pharetra lorem at efficitur. Praesent eros nisi, fringilla eu accumsan sed, molestie et ex. Interdum et malesuada fames ac ante ipsum primis in faucibus.  </p>
+    </div>
+
+    <div class="qualidade-item azul">
+      <h2>Econômico</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique diam imperdiet vulputate elementum. Curabitur laoreet faucibus dui eget dignissim. Suspendisse egestas mollis risus, in lacinia felis gravida vitae. Vestibulum lacinia pharetra lorem at efficitur. Praesent </p>
+    </div>
+
+    <div class="qualidade-item roxo">
+      <h2>Compacto</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique diam imperdiet vulputate elementum. Curabitur laoreet faucibus dui eget dignissim. Suspendisse egestas mollis risus, in lacinia felis gravida vitae. Vestibulum lacinia pharetra lorem at efficitur. Praesent </p>
+    </div>
+
+    <div class="qualidade-item rosa">
+      <h2>Opaco</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique diam imperdiet vulputate elementum. Curabitur laoreet faucibus dui eget dignissim. Suspendisse egestas mollis risus, in lacinia felis gravida vitae. Vestibulum lacinia pharetra lorem at efficitur. eros nisi, fringilla eu accumsan sed, molestie et ex. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
+    </div>
+
+    <div class="qualidade-item azul">
+      <h2>Sustentável</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique diam imperdiet vulputate elementum. Curabitur laoreet faucibus dui eget dignissim. Suspendisse egestas mollis risus, in lacinia felis gravida vitae. Vestibulum lacinia pharetra lorem at efficitur. Praesent </p>
+    </div>
+  </section>
+
+  <!-- section do newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-info">
+      <h1>Newsletter</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique diam</p>
+    </div>
+    <!-- form não fará nada -->
+    <form class="newsletter-form">
+      <input type="text" placeholder="Seu e-mail">
+      <button type="submit"> Assinar </button>
+    </form>
+  </section>
+
+  <!-- footer -->
+  <footer class="footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique diam</p>
+  </footer>
+  </body>
+</html>
